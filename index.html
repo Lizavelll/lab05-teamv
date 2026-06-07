@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторна робота 5 – CI/CD – teamV</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: 'Segoe UI', Arial, sans-serif;
+            background: linear-gradient(135deg, #0d1117 0%, #161b22 60%, #1f2937 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #c9d1d9;
+        }
+        .card {
+            background: rgba(255,255,255,0.05);
+            border: 1px solid rgba(48,54,61,0.8);
+            border-radius: 16px;
+            padding: 48px 56px;
+            max-width: 640px;
+            width: 90%;
+            text-align: center;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.5);
+        }
+        .badge {
+            display: inline-block;
+            background: #238636;
+            color: #fff;
+            border-radius: 20px;
+            padding: 4px 16px;
+            font-size: 0.8em;
+            margin-bottom: 20px;
+            letter-spacing: 1px;
+        }
+        h1 { font-size: 1.7em; margin-bottom: 8px; color: #f0f6fc; }
+        h2 { font-size: 1.05em; font-weight: 400; color: #8b949e; margin-bottom: 28px; }
+        .divider { height: 1px; background: rgba(48,54,61,0.8); margin: 24px 0; }
+        .pipeline {
+            display: flex;
+            justify-content: center;
+            gap: 12px;
+            margin: 20px 0;
+            flex-wrap: wrap;
+        }
+        .step {
+            background: rgba(35,134,54,0.2);
+            border: 1px solid #238636;
+            border-radius: 8px;
+            padding: 8px 16px;
+            font-size: 0.85em;
+            color: #3fb950;
+        }
+        .arrow { color: #8b949e; line-height: 2; }
+        .team-label { font-size: 0.85em; color: #8b949e; text-transform: uppercase; letter-spacing: 1px; margin-bottom: 8px; }
+        .member { font-size: 1.15em; color: #f0f6fc; }
+        .version { margin-top: 20px; font-size: 0.8em; color: #484f58; }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <span class="badge">✓ CI/CD · GitHub Actions · teamV</span>
+        <h1>Лабораторна робота 5</h1>
+        <h2>Безперервна інтеграція та доставка (CI/CD)</h2>
+        <div class="divider"></div>
+        <div class="pipeline">
+            <div class="step">📝 Commit</div>
+            <span class="arrow">→</span>
+            <div class="step">🔍 Lint</div>
+            <span class="arrow">→</span>
+            <div class="step">🐳 Build</div>
+            <span class="arrow">→</span>
+            <div class="step">📦 Push</div>
+            <span class="arrow">→</span>
+            <div class="step">🚀 Deploy</div>
+        </div>
+        <div class="divider"></div>
+        <div class="team-label">Виконала</div>
+        <div class="member">Ліза Велентюк</div>
+        <p class="version">Автоматично оновлено через GitHub Actions + Watchtower · v2.0</p>
+    </div>
+</body>
+</html>
